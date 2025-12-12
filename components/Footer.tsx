@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-slate-900 text-slate-300 py-12">
+    <footer className="bg-slate-900 text-slate-300 py-12 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className="text-white text-lg font-bold mb-4">LetrasBonitasPRO</h3>
@@ -15,10 +15,10 @@ export const Footer: React.FC = () => {
         <div>
           <h3 className="text-white text-lg font-bold mb-4">Enlaces Rápidos</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/letras-cursivas" className="hover:text-indigo-400">Conversor de letras cursivas</Link></li>
-            <li><Link to="/letras-goticas" className="hover:text-indigo-400">Conversor de letras góticas</Link></li>
-            <li><Link to="/letras-tatuajes" className="hover:text-indigo-400">Letras para tatuajes</Link></li>
-            <li><Link to="/letras-redes-sociales" className="hover:text-indigo-400">Letras para Facebook</Link></li>
+            <li><Link href="/letras-cursivas" className="hover:text-indigo-400">Conversor de letras cursivas</Link></li>
+            <li><Link href="/letras-goticas" className="hover:text-indigo-400">Conversor de letras góticas</Link></li>
+            <li><Link href="/letras-tatuajes" className="hover:text-indigo-400">Letras para tatuajes</Link></li>
+            <li><Link href="/letras-redes-sociales" className="hover:text-indigo-400">Letras para Facebook</Link></li>
           </ul>
         </div>
         <div>

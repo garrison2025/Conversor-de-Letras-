@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { FontCategory, FontStyle } from '../types';
 import { getFontsByCategory, convertText } from '../services/fontService';
